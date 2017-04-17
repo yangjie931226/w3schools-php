@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h1>php Variables</h1>
+
+<h3>Creating (Declaring) PHP Variables</h3>
+<?php
+$txt = "Hello world!";
+$x = 5;
+$y = 10.5;
+echo $txt;
+echo "<br>";
+echo $x;
+echo "<br>";
+echo $y;
+?>
+
+<h3>PHP Variables</h3>
+<?php
+//$5a=10;syntax error; A variable name cannot start with a number
+echo "<p>A variable name cannot start with a number</p>";
+echo "<p>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _)</p>";
+$age=10;
+$AGE=18;
+echo "<p>$age</p>";
+echo "<p>$AGE</p>";
+echo "<p>Variable names are case-sensitive ($age and $AGE are two different variables)</p>"
+?>
+
+<h3>Output Variables</h3>
+<?php
+$txt = "PHP";
+echo "I love $txt!";
+echo "<br>";
+$txt = "W3Schools.com";
+echo "I love " . $txt . "!";
+echo "<br>";
+$x = 5;
+$y = 4;
+echo $x + $y;
+?>
+
+<h3>PHP Variables Scope</h3>
+<?php
+$x = 5;//全局变量
+function myTestGlobal() {
+    // myTest方法内部获取不到$x的值
+    echo "<p>Variable x inside function is: $x</p>";
+}
+myTestGlobal();
+echo "<p>Variable x outside function is: $x</p>";
+function myTestLoacl() {
+$y=5;//方法内部变量
+echo "<p>Variable x inside function is: $y</p>";
+}
+myTestLoacl();
+//外部获取不到方法内部的变量值
+echo "<p>Variable x outside function is: $y</p>";
+?>
+
+<h3>PHP The global Keyword</h3>
+<?php
+$x = 5;
+$y = 10;
+function myTestAdd() {
+    global $x, $y;
+    $y = $x + $y;
+}
+myTestAdd();
+echo $y;
+echo "<br>";
+$x = 5;
+$y = 10;
+function myTestGlobals() {
+$GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
+}
+myTestGlobals();
+echo $y;
+?>
+
+<h3>PHP The static Keyword</h3>
+<?php
+function myTest() {
+    static $x = 0;
+    echo $x;
+    $x++;
+}
+myTest();
+myTest();
+myTest();
+?>
+
+</body>
+</html>
