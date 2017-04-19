@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h1>PHP Data Types</h1>
+
+<?php
+echo "<h3>PHP String</h3>";
+$str1 = "This is a string!";
+$str2 = 'This is a string too!!';
+echo $str1;
+echo "<br>";
+echo $str2;
+
+echo "<h3>PHP Integer</h3>";
+$num = 1234;
+var_dump($num);
+
+echo "<h3>PHP Float</h3>";
+$num1 = 1.521;
+var_dump($num1);
+
+echo "<h3>PHP Boolean</h3>";
+$boolean1 = true;
+$boolean2 = false;
+var_dump($boolean1);
+echo "<br>";
+var_dump($boolean2);
+
+echo "<h3>PHP Array</h3>";
+$fruits = array("apple","banana","pear");
+var_dump($fruits);
+
+echo "<h3>PHP Object</h3>";
+class Person {
+    function Person() {
+        $this->name = "YangJie";
+    }
+}
+$man = new Person();
+echo $man->name;
+
+echo "<h3>PHP NULL Value</h3>";
+$str3 = "yangjie";
+$str3 = null;
+var_dump($str3);
+}
+?>
+
+</body>
+</html>
