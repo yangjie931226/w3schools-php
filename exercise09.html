@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h1>PHP 5 Constants</h1>
+
+<?php
+echo "<h3>Create a PHP Constant</h3>";
+define("SAYHELLO", "Hello YangJie!");
+echo SAYHELLO;
+define("SAYHELLO", "Hello YangJie!", true);
+echo sayhello;
+
+echo "<h3>Constants are Global</h3>";
+define("HI", "Hi my friend!");
+function sayHi() {
+    echo HI;
+}
+sayHi();
+?>
+
+</body>
+</html>
