@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h1>PHP 5 Operators</h1>
+
+<?php
+echo "<h3>PHP Arithmetic Operators</h3>";
+$x = 10;
+$y = 5;
+echo $x + $y;
+echo "<br>";
+echo $x - $y;
+echo "<br>";
+echo $x * $y;
+echo "<br>";
+echo $x / $y;
+echo "<br>";
+echo $x % $y;
+
+echo "<h3>PHP Assignment Operators</h3>";
+$z = 2;
+echo $z;
+echo "<br>";
+$z += 2;
+echo $z;
+echo "<br>";
+$z -= 6;
+echo $z;
+echo "<br>";
+$z *= 2;
+echo $z;
+echo "<br>";
+$z /= 2;
+echo $z;
+echo "<br>";
+$z %= 2;
+echo $z;
+
+echo "<h3>PHP Comparison Operators</h3>";
+$a = 10;
+$b = "10";
+$c = 5;
+var_dump($a == $b);
+echo "<br>";
+var_dump($a === $b);
+echo "<br>";
+var_dump($a != $b);
+echo "<br>";
+var_dump($a <> $b);
+echo "<br>";
+var_dump($a !== $b);
+echo "<br>";
+var_dump($a > $c);
+echo "<br>";
+var_dump($a < $c);
+echo "<br>";
+var_dump($a >= $c);
+echo "<br>";
+var_dump($a <= $c);
+
+echo "<h3>PHP Increment / Decrement Operators</h3>";
+$d = 10;
+echo ++$d;
+echo "<br>";
+echo $d++;
+echo "<br>";
+echo $d--;
+echo "<br>";
+echo --$d;
+
+echo "<h3>PHP Logical Operators</h3>";
+$e = 10;
+$f = 10;
+if ($e > 9 and $f > 9) {
+echo "Hello world!";
+}
+echo "<br>";
+if ($e > 9 or $f > 9) {
+echo "Hello world!";
+}
+echo "<br>";
+if ($e > 9 xor $f > 10) {
+echo "Hello world!";
+}
+echo "<br>";
+if ($e > 9 && $f > 10) {
+echo "Hello world!";
+}
+echo "<br>";
+if ($e > 9 || $f > 10) {
+echo "Hello world!";
+}
+
+echo "<h3>PHP String Operators</h3>";
+$g = "yangjie's";
+$h = "job is a programmer";
+echo $g.$h;
+echo "<br>";
+$g .= $h;
+echo $g;
+
+echo "<h3>PHP Array Operators</h3>";
+$i = array("a" => "red", "b" => "green");
+$j = array("c" => "blue", "d" => "yellow");
+print_r($i + $j);
+echo "<br>";
+var_dump($i == $j);
+echo "<br>";
+?>
+
+</body>
+</html>
