@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h1>PHP 5 if...else...elseif Statements</h1>
+
+<?php
+echo "<h3>PHP - The if Statement</h3>";
+$a = 10;
+if ($a < 20) {
+echo "10 < 20 is right!";
+}
+echo "<br>";
+
+echo "<h3>PHP - The if...else Statement</h3>";
+$b = 10;
+if ($b < 2) {
+echo "10 < 2 is right!";
+}else{
+echo "10 < 2 is false!";
+}
+echo "<br>";
+
+echo "<h3>PHP - The if...elseif....else Statement</h3>";
+$c = 10;
+if ($c == 2) {
+echo "in here!";
+}else if ($c == 10) {
+echo "in here 10!";
+}else {
+echo "yangjie";
+}
+echo "<br>";
+
+echo "<h3>PHP - The switch Statement</h3>";
+$d=10;
+switch ($d)
+{
+case 0:
+echo "The number is 0!";
+break;
+case 1:
+echo "The number is 1!";
+break;
+case 2:
+echo "The number is 2!";
+break;
+case 3:
+echo "The number is 3!";
+break;
+case 4 :
+echo "The number is 3!";
+break;
+default:
+echo "The number is $d!";
+break;
+}
+?>
+
+</body>
+</html>
