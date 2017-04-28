@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h1>PHP 5 Functions</h1>
+
+<?php
+    echo "<h3>Create a User Defined Function in PHP</h3>";
+    function myFunction($p1, $p2) {
+        echo $p1 * $p2;
+    }
+    myFunction(3, 5);
+    echo "<br>";
+
+    echo "<h3>PHP Function Arguments</h3>";
+    function sayHello($name) {
+        echo "Hello $name!";
+        echo "<br>";
+    }
+    sayHello("yangjie");
+    sayHello("yaoming");
+    sayHello("kebi");
+    echo "<br>";
+
+    echo "<h3>PHP Default Argument Value</h3>";
+    function sayHi($name="MaiDi") {
+        echo "Hi $name!";
+        echo "<br>";
+    }
+    sayHi();
+    echo "<br>";
+?>
+
+</body>
+</html>
