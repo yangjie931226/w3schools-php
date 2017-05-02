@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h1>PHP 5 Arrays</h1>
+
+<?php
+    echo "<h3>Example</h3>";
+    $cars = array("Volvo", "BMW", "Toyota");
+    echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+    echo "<br>";
+
+    echo "<h3>Create an Array in PHP</h3>";
+    $cars1 = array();
+    array_push($cars1, "Volvo", "BMW", "Toyota");
+    echo "I like " . $cars1[0] . ", " . $cars1[1] . " and " . $cars1[2] . ".";
+    echo "<br>";
+
+    echo "<h3>PHP Indexed Arrays</h3>";
+    $cars2 = array("Volvo", "BMW", "Toyota");
+    $cars2[0] = "Volvo";
+    $cars2[1] = "BMW";
+    $cars2[2] = "Toyota";
+    echo "I like " . $cars2[0] . ", " . $cars2[1] . " and " . $cars2[2] . ".";
+    echo "<br>";
+
+    echo "<h3>Get The Length of an Array - The count() Function</h3>";
+    $cars3 = array("Volvo", "BMW", "Toyota");
+    echo count($cars3);
+    echo "<br>";
+
+    echo "<h3>PHP Associative Arrays</h3>";
+    $age = array("Peter" => "35", "Ben" => "37", "Joe" => "43");
+    echo "Peter is " . $age['Peter'] . " years old.";
+    echo "<br>";
+?>
+
+</body>
+</html>
