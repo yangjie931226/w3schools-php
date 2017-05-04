@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h1>PHP 5 Sorting Arrays</h1>
+
+<?php
+    echo "<h3>Sort Array (Ascending Order), According to Value - asort()</h3>";
+    $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+    asort($age);
+    foreach($age as $x => $x_value) {
+        echo "Key=" . $x . ", Value=" . $x_value;
+        echo "<br>";
+    }
+
+    echo "<h3>Sort Array (Ascending Order), According to Key - ksort()</h3>";
+    ksort($age);
+    foreach($age as $x => $x_value) {
+        echo "Key=" . $x . ", Value=" . $x_value;
+        echo "<br>";
+    }
+
+    echo "<h3>Sort Array (Descending Order), According to Value - arsort()</h3>";
+    arsort($age);
+    foreach($age as $x => $x_value) {
+        echo "Key=" . $x . ", Value=" . $x_value;
+        echo "<br>";
+    }
+
+    echo "<h3>Sort Array (Descending Order), According to Key - krsort()</h3>";
+    krsort($age);
+    foreach($age as $x => $x_value) {
+        echo "Key=" . $x . ", Value=" . $x_value;
+        echo "<br>";
+    }
+?>
+
+</body>
+</html>
