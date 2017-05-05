@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h1>PHP 5 Global Variables - Superglobals</h1>
+
+<?php
+    echo "<h3>PHP GLOBALS</h3>";
+    $str1 = "Yang";
+    $str2 = "Jie";
+    function myFunction() {
+        $GLOBALS['str3'] = $GLOBALS['str1'] . $GLOBALS['str2'];
+    }
+    myFunction();
+    echo $str3;
+
+    echo "<h3>PHP _SERVER</h3>";
+    echo $_SERVER['PHP_SELF'];
+    echo "<br>";
+    echo $_SERVER['SCRIPT_NAME'];
+?>
+
+</body>
+</html>
