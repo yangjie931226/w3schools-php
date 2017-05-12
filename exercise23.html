@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h1>PHP 5 Array Functions </h1>
+
+<?php
+    /*
+    * PHP array function
+    *
+    *
+    * @version 0.1.0
+    * @author yangjie
+    * @date 5/12/2017
+    *
+    */
+    echo "<h3>PHP array_change_key_case() Function</h3>";
+    $pets = array("a"=>"Cat","B"=>"Dog","c"=>"Horse","b"=>"Bird");
+    print_r(array_change_key_case($pets,CASE_UPPER));
+
+    echo "<h3>PHP array_chunk() Function</h3>";
+    $cars = array("Volvo","BMW","Toyota","Honda","Mercedes","Opel");
+    print_r(array_chunk($cars, 2));
+
+    echo "<h3>PHP array_column() Function</h3>";
+    $a = array(
+        array(
+            'id' => 5698,
+            'first_name' => 'Peter',
+            'last_name' => 'Griffin',
+        ),
+        array(
+            'id' => 4767,
+            'first_name' => 'Ben',
+            'last_name' => 'Smith',
+        ),
+        array(
+            'id' => 3809,
+            'first_name' => 'Joe',
+            'last_name' => 'Doe',
+        )
+    );
+
+    $last_names = array_column($a, 'last_name');
+    print_r($last_names);
+?>
+</body>
+</html>
