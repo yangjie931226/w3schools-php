@@ -1,11 +1,9 @@
 <?php
 /**
  *
- * 功能： mysql数据库插入数据到MyGuests表,然后获取插入的id
- *
- * @file        PHP Create MySQL Tables
+ * 功能：       mysql数据库插入数据到MyGuests表,然后获取插入的id
  * @author      yangjie <yangjie@163.com>
- * @version     v 1.0 2017/05/22 13:45:56 yangjie
+ * @version     1.0
  */
 $servername = "localhost";
 $username = "root";

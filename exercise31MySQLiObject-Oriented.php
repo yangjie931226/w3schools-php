@@ -1,8 +1,8 @@
 <?php
 /**
- * 功能：        PHP Prepared Statements
+ * 功能：       PHP Prepared Statements
  * @author      杨杰 <yangjie@163.com>
- * @version     v 1.0
+ * @version     1.0
  */
 $servername = "localhost";
 $username = "root";

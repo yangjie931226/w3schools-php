@@ -1,8 +1,8 @@
 <?php
 /**
- * 功能：  将多个数据插入到MySQL数据库中
+ * 功能：       将多个数据插入到MySQL数据库中
  * @author      杨杰 <yangjie@163.com>
- * @version     v 1.0
+ * @version     1.0
  */
 $servername = "localhost";
 $username = "root";

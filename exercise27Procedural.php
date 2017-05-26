@@ -1,11 +1,9 @@
 <?php
 /**
  *
- * 功能： mysql数据库创建表
- *
- * @file        PHP Create MySQL Tables
+ * 功能：       mysql数据库创建表
  * @author      yangjie <yangjie@163.com>
- * @version     v 1.0 2017/05/18 13:48:46 yangjie
+ * @version     1.0
  */
 $servername = "localhost";
 $username = "root";

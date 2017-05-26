@@ -2,10 +2,8 @@
 /**
  *
  * 功能： mysql数据库插入数据到MyGuests表
- *
- * @file        PHP Create MySQL Tables
  * @author      yangjie <yangjie@163.com>
- * @version     v 1.0 2017/05/19 13:26:12 yangjie
+ * @version     1.0
  */
 $servername = "localhost";
 $username = "root";
