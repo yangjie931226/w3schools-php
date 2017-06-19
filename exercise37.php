@@ -16,13 +16,13 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 //关闭自动提交事务
-mysqli_autocommit($con, FALSE);
+mysqli_autocommit($conn, FALSE);
 //Perform queries and print out affected rows
 mysqli_query($conn, "INSERT INTO Persons (FirstName,LastName,Age)
 VALUES ('Peter','Griffin',35)");
-mysqli_query($con, "INSERT INTO Persons (FirstName,LastName,Age)
+mysqli_query($conn, "INSERT INTO Persons (FirstName,LastName,Age)
 VALUES ('Glenn','Quagmire',33)");
 //提交事务
-mysqli_commit($con);
+mysqli_commit($conn);
 //关闭数据库连接
 mysqli_close($conn);
